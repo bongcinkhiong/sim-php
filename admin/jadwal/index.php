@@ -31,6 +31,7 @@ INNER JOIN maskapai ON rute.id_maskapai = maskapai.id_maskapai ORDER BY tanggal_
                 <th>Waktu Berangkat</th>
                 <th>Waktu Tiba</th>
                 <th>Harga</th>
+                <th>Kapasitas Kursi</th>
                 <th>Aksi</th>
             </tr>
             <?php $no = 1; ?>
@@ -45,6 +46,7 @@ INNER JOIN maskapai ON rute.id_maskapai = maskapai.id_maskapai ORDER BY tanggal_
                 <td> <?= $data['waktu_berangkat'] ?> </td>
                 <td> <?= $data['waktu_tiba'] ?> </td>
                 <td> Rp <?= number_format($data['harga']) ?> </td>
+                <td> <?= $data['kapasitas_kursi'] ?> </td>
                 <td>
                     <a href="edit.php?id_jadwal=<?= $data['id_jadwal'] ?>">Edit</a>
                     <a href="hapus.php?id_jadwal=<?= $data['id_jadwal'] ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?');">Delete</a>

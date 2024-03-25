@@ -63,7 +63,6 @@ if(isset($_POST["edit"])){
             <?php endforeach; ?>
         </select><br /> <br />
     
-       
         <label for="rute_tujuan">Rute Tujuan</label><br />
         <select name="rute_tujuan" id="rute_tujuan">
             <option value="<?= $rute["rute_tujuan"]; ?>"><?= $rute["rute_tujuan"]; ?></option>

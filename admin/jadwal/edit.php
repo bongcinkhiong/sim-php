@@ -41,8 +41,8 @@ if(isset($_POST["edit"])){
 <?php include 'C:\laragon\www\latihan-sim-php\layouts\admin_sidebar.php'; ?>
 <h1>Edit Jadwal</h1>
     <form action="" method="post" enctype="multipart/form-data">
-        <input type="text" name="id_jadwal" value="<?= $jadwal["id_jadwal"]; ?>">
-
+        <input type="hidden" name="id_jadwal" value="<?= $jadwal["id_jadwal"]; ?>">
+    
         <label for="id_rute">Pilih Rute</label>
         <select name="id_rute" id="id_rute" class="form-control"> 
             <option value="<?= $jadwal["id_rute"]; ?>"> <?= $jadwal["nama_maskapai"]; ?> - <?= $jadwal["rute_asal"]; ?> - <?= $jadwal["rute_tujuan"]; ?> </option>

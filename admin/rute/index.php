@@ -38,7 +38,7 @@ INNER JOIN maskapai ON maskapai.id_maskapai = rute.id_maskapai ORDER BY rute_asa
                 <td><?= $data["tanggal_pergi"]; ?></td>
                 <td>
                     <a href="edit.php?id=<?= $data["id_rute"]; ?>">Edit</a>
-                    <a href="hapus.php?id=<?= $data["id_rute"]; ?>" onClick="return confirm('Apakah anda yakin ingin menghapus data ini?')">Hapus</a>
+                    <a href="hapus.php?id_rute=<?= $data['id_rute'] ?>" onclick="return confirm('Apakah anda yakin ingin menghapus data ini?');">Delete</a>
                 </td>
             </tr>
             <?php endforeach; ?>
